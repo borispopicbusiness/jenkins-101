@@ -13,7 +13,7 @@ pipeline {
                 echo "Building..."
                 sh '''
                 cd myapp
-                python3 venv ./my-venv
+                python3 -m venv ./my-venv
                 ./my-venv/bin/activate
                 pip3 install -r requirements.txt
                 '''
