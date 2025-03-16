@@ -16,8 +16,8 @@ pipeline {
                 python3 -m venv ./my-venv
                 chmod +x ./my-venv/bin/activate
                 
-                chown -R root:root /path/to/venv
-                chmod -R 755 /path/to/venv
+                chown -R root:root ./my-venv
+                chmod -R 755 ./my-venv
                 
                 ./my-venv/bin/activate
                 pip3 install -r requirements.txt
