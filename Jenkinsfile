@@ -15,8 +15,13 @@ pipeline {
                 cd myapp
                 python3 -m venv ./my-venv
                 chmod +x ./my-venv/bin/activate
+                
+                chown -R root:root /path/to/venv
+                chmod -R 755 /path/to/venv
+                
                 ./my-venv/bin/activate
                 pip3 install -r requirements.txt
+                pip install -r requirements.txt
                 '''
             }
         }
