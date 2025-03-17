@@ -13,11 +13,11 @@ pipeline {
                 echo "Building..."
                 sh '''
                 cd myapp
+                echo "Wap81802" | pip3 install fire
                 echo "Wap81802" | python3 -m venv ./my-venv
                 echo "Wap81802" | chmod +x ./my-venv/bin/activate
                 
                 echo "Wap81802" | source ./my-venv/bin/activate
-                echo "Wap81802" | pip3 install fire
                 #echo "Wap81802" | pip3 install --upgrade pip setuptools wheel
                 #echo "Wap81802" | pip3 install -r requirements.txt
                 '''
