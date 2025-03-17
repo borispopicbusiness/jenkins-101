@@ -13,7 +13,7 @@ pipeline {
                 echo "Building..."
                 sh '''
                 cd myapp
-                echo "Wap81802" | pip3 install fire
+                echo "Wap81802" | pip3 install --break-system-packages fire
                 echo "Wap81802" | python3 -m venv ./my-venv
                 echo "Wap81802" | chmod +x ./my-venv/bin/activate
                 
