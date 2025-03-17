@@ -16,9 +16,6 @@ pipeline {
                 echo "Wap81802" | python3 -m venv ./my-venv
                 echo "Wap81802" | chmod +x ./my-venv/bin/activate
                 
-                echo "Wap81802" | chown -R root:root ./my-venv
-                echo "Wap81802" | chmod -R 755 ./my-venv
-                
                 echo "Wap81802" | ./my-venv/bin/activate
                 echo "Wap81802" | pip3 install -r requirements.txt
                 '''
