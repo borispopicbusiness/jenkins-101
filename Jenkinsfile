@@ -17,8 +17,9 @@ pipeline {
                 echo "Wap81802" | chmod +x ./my-venv/bin/activate
                 
                 echo "Wap81802" | source ./my-venv/bin/activate
-                echo "Wap81802" | pip install --upgrade pip setuptools wheel
-                echo "Wap81802" | pip3 install -r requirements.txt
+                echo "Wap81802" | pip3 install fire
+                #echo "Wap81802" | pip3 install --upgrade pip setuptools wheel
+                #echo "Wap81802" | pip3 install -r requirements.txt
                 '''
             }
         }
